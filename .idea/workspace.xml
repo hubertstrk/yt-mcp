@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="827991af-194a-4c1f-9126-adba5f0e6f9f" name="Changes" comment="" />
+    <list default="true" id="827991af-194a-4c1f-9126-adba5f0e6f9f" name="Changes" comment="Add initial project setup with TypeScript, ESLint, and Prettier&#10;&#10;Introduced a YouTrack MCP server implementation using TypeScript. Configured ESLint and Prettier for code linting and formatting. Added essential project dependencies and scripts in the package.json file.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +50,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "ml.llm.mcp",
     "ts.external.directory.path": "C:\\Sources\\yt-mcp\\yt-mcp\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -73,10 +76,52 @@
       <updated>1748207284222</updated>
       <workItem from="1748207285336" duration="766000" />
       <workItem from="1748208107095" duration="272000" />
+      <workItem from="1748211000752" duration="723000" />
     </task>
+    <task id="LOCAL-00001" summary="Add initial project setup with TypeScript, ESLint, and Prettier&#10;&#10;Introduced a YouTrack MCP server implementation using TypeScript. Configured ESLint and Prettier for code linting and formatting. Added essential project dependencies and scripts in the package.json file.">
+      <option name="closed" value="true" />
+      <created>1748211091352</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748211091352</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add initial project setup with TypeScript, ESLint, and Prettier&#10;&#10;Introduced a YouTrack MCP server implementation using TypeScript. Configured ESLint and Prettier for code linting and formatting. Added essential project dependencies and scripts in the package.json file.">
+      <option name="closed" value="true" />
+      <created>1748211176545</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1748211176545</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add initial project setup with TypeScript, ESLint, and Prettier&#10;&#10;Introduced a YouTrack MCP server implementation using TypeScript. Configured ESLint and Prettier for code linting and formatting. Added essential project dependencies and scripts in the package.json file.">
+      <option name="closed" value="true" />
+      <created>1748211260995</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1748211260995</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initialize Node.js + TypeScript project with ESLint and Prettier configuration" />
+    <MESSAGE value="Add initial project setup with TypeScript, ESLint, and Prettier&#10;&#10;Introduced a YouTrack MCP server implementation using TypeScript. Configured ESLint and Prettier for code linting and formatting. Added essential project dependencies and scripts in the package.json file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial project setup with TypeScript, ESLint, and Prettier&#10;&#10;Introduced a YouTrack MCP server implementation using TypeScript. Configured ESLint and Prettier for code linting and formatting. Added essential project dependencies and scripts in the package.json file." />
   </component>
 </project>
