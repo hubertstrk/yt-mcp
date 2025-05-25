@@ -1,0 +1,27 @@
+{
+    "name": "yt-mcp",
+    "version": "1.0.0",
+    "description": "A standard Node.js project using TypeScript.",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "dev": "nodemon src/index.ts",
+        "lint": "eslint . --ext .ts",
+        "format": "prettier --write ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "eslint": "^8.0.0",
+        "nodemon": "^3.0.0",
+        "prettier": "^3.0.0",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.12.0",
+        "zod": "^3.25.28"
+    }
+}
