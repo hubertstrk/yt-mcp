@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="827991af-194a-4c1f-9126-adba5f0e6f9f" name="Changes" comment="Add Prettier configuration to project settings&#10;&#10;Introduce a `.idea/prettier.xml` file to enable automatic Prettier configuration. This ensures consistent code formatting across the project when using compatible IDEs." />
+    <list default="true" id="827991af-194a-4c1f-9126-adba5f0e6f9f" name="Changes" comment="Add Prettier configuration to project settings&#10;&#10;Introduce a `.idea/prettier.xml` file to enable automatic Prettier configuration. This ensures consistent code formatting across the project when using compatible IDEs.">
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,6 +79,7 @@
       <workItem from="1748208107095" duration="272000" />
       <workItem from="1748211000752" duration="723000" />
       <workItem from="1748211781340" duration="80000" />
+      <workItem from="1748734950054" duration="103000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project setup with TypeScript, ESLint, and Prettier&#10;&#10;Introduced a YouTrack MCP server implementation using TypeScript. Configured ESLint and Prettier for code linting and formatting. Added essential project dependencies and scripts in the package.json file.">
       <option name="closed" value="true" />
