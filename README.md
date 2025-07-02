@@ -43,7 +43,7 @@ Starts the server with nodemon for automatic reloading during development.
 
 ### API Configuration
 
-By default, the server attempts to connect to a YouTrack API at `http://localhost:3000/ticket/`. You may need to modify this URL in `src/index.ts` to match your YouTrack instance.
+By default, the server attempts to connect to a YouTrack API at `http://localhost:3000/api/ticket/`. You may need to modify this URL in `src/index.ts` to match your YouTrack instance.
 
 ## Tool Documentation
 
