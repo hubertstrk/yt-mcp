@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="827991af-194a-4c1f-9126-adba5f0e6f9f" name="Changes" comment="Update dependencies and add `ts-node`&#10;&#10;Upgraded `typescript` to `^5.8.3` and added `ts-node` `^10.9.2` to devDependencies in `package.json`. Updated `package-lock.json` with new dependency resolutions.">
+    <list default="true" id="827991af-194a-4c1f-9126-adba5f0e6f9f" name="Changes" comment="Update README and workspace configuration; add GitToolBox project settings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,26 +36,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Sources/yt-mcp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Sources\\yt-mcp\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "ml.llm.mcp",
-    "ts.external.directory.path": "C:\\Sources\\yt-mcp\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Sources/yt-mcp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Sources\\yt-mcp\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.mcp&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Sources\\yt-mcp\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Sources\yt-mcp" />
@@ -88,7 +86,8 @@
       <workItem from="1748739018861" duration="408000" />
       <workItem from="1748739479884" duration="163000" />
       <workItem from="1748739672988" duration="222000" />
-      <workItem from="1751494330783" duration="2983000" />
+      <workItem from="1751494330783" duration="3202000" />
+      <workItem from="1751533417661" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project setup with TypeScript, ESLint, and Prettier&#10;&#10;Introduced a YouTrack MCP server implementation using TypeScript. Configured ESLint and Prettier for code linting and formatting. Added essential project dependencies and scripts in the package.json file.">
       <option name="closed" value="true" />
@@ -138,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748735224700</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update README and workspace configuration; add GitToolBox project settings">
+      <option name="closed" value="true" />
+      <created>1751497547392</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1751497547392</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +168,7 @@
     <MESSAGE value="Add initial project setup with TypeScript, ESLint, and Prettier&#10;&#10;Set up a YouTrack MCP server using TypeScript. Configured ESLint and Prettier to ensure consistent code quality. Included necessary dependencies and scripts in the package.json file for project initialization." />
     <MESSAGE value="Add Prettier configuration to project settings&#10;&#10;Introduce a `.idea/prettier.xml` file to enable automatic Prettier configuration. This ensures consistent code formatting across the project when using compatible IDEs." />
     <MESSAGE value="Update dependencies and add `ts-node`&#10;&#10;Upgraded `typescript` to `^5.8.3` and added `ts-node` `^10.9.2` to devDependencies in `package.json`. Updated `package-lock.json` with new dependency resolutions." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update dependencies and add `ts-node`&#10;&#10;Upgraded `typescript` to `^5.8.3` and added `ts-node` `^10.9.2` to devDependencies in `package.json`. Updated `package-lock.json` with new dependency resolutions." />
+    <MESSAGE value="Update README and workspace configuration; add GitToolBox project settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update README and workspace configuration; add GitToolBox project settings" />
   </component>
 </project>

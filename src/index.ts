@@ -5,7 +5,7 @@ import { z } from "zod";
 // Helper function to fetch ticket info from external API
 async function fetchTicketInfo(ticketId: string): Promise<any> {
   try {
-    const response = await fetch(`http://localhost:3000/ticket/${ticketId}`);
+    const response = await fetch(`http://localhost:3000/api/ticket/${ticketId}`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -41,11 +41,23 @@ server.tool(
         ],
       };
     }
+    // Merge comments into the first content block for better compatibility
+    let mainText = JSON.stringify(apiResult.data, null, 2);
+    if (Array.isArray(apiResult.data.comments) && apiResult.data.comments.length > 0) {
+      mainText +=
+        "\n\nComments:\n" +
+        apiResult.data.comments
+          .map(
+            (x: any) =>
+              `\n---\nComment by ${x.author} (${x.created}):\n${x.text}`
+          )
+          .join("");
+    }
     return {
       content: [
         {
           type: "text",
-          text: JSON.stringify(apiResult.data, null, 2),
+          text: mainText,
         },
       ],
     };
