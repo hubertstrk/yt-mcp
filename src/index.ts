@@ -11,7 +11,20 @@ async function fetchTicketInfo(ticketId: string): Promise<any> {
     }
     return await response.json();
   } catch (error) {
-    console.error("Error fetching ticket info:", error);
+    console.error(`Error fetching ticket info: ${error}`);
+    return null;
+  }
+}
+
+async function fetchChangedTickets(range: string): Promise<any> {
+  try {
+    const response = await fetch(`http://localhost:3000/api/tickets/changes/${range}`);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error(`Error fetching ${range} changes: ${error}`);
     return null;
   }
 }
@@ -58,6 +71,37 @@ server.tool(
         {
           type: "text",
           text: mainText,
+        },
+      ],
+    };
+  },
+);
+
+// Register tool to get ticket changes
+server.tool(
+  "get-ticket-changes",
+  "Get YouTrack ticket changes for a specified time range",
+  {
+    range: z.string().describe("Time range for ticket changes (e.g., 'today', 'yesterday', 'this-week', 'last-week')"),
+  },
+  async ({ range }: { range: string }) => {
+    const apiResult = await fetchChangedTickets(range);
+    if (!apiResult) {
+      return {
+        content: [
+          {
+            type: "text",
+            text: `Failed to retrieve ticket changes for range: ${range}`,
+          },
+        ],
+      };
+    }
+
+    return {
+      content: [
+        {
+          type: "text",
+          text: JSON.stringify(apiResult, null, 2),
         },
       ],
     };
