@@ -92,6 +92,10 @@
       <workItem from="1751533417661" duration="600000" />
       <workItem from="1756847998845" duration="2449000" />
       <workItem from="1756854390097" duration="2006000" />
+      <workItem from="1756881765195" duration="596000" />
+      <workItem from="1757062743264" duration="715000" />
+      <workItem from="1757362820723" duration="18000" />
+      <workItem from="1757364902389" duration="2744000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial project setup with TypeScript, ESLint, and Prettier&#10;&#10;Introduced a YouTrack MCP server implementation using TypeScript. Configured ESLint and Prettier for code linting and formatting. Added essential project dependencies and scripts in the package.json file.">
       <option name="closed" value="true" />

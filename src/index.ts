@@ -16,15 +16,15 @@ async function fetchTicketInfo(ticketId: string): Promise<any> {
   }
 }
 
-async function fetchChangedTickets(range: string): Promise<any> {
+async function fetchChangedTickets(from: string, to: string): Promise<any> {
   try {
-    const response = await fetch(`http://localhost:3000/api/tickets/changes/${range}`);
+    const response = await fetch(`http://localhost:3000/api/tickets/changes/${from}/${to}`);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     return await response.json();
   } catch (error) {
-    console.error(`Error fetching ${range} changes: ${error}`);
+    console.error(`Error fetching ${from} .. ${to} changes: ${error}`);
     return null;
   }
 }
@@ -82,16 +82,17 @@ server.tool(
   "get-ticket-changes",
   "Get YouTrack ticket changes for a specified time range",
   {
-    range: z.string().describe("Time range for ticket changes (e.g., 'today', 'yesterday', 'this-week', 'last-week')"),
+    from: z.string().describe("start time for ticket changes (e.g. '2025-09-08')"),
+    to: z.string().describe("end time for ticket changes (e.g. '2025-09-10')"),
   },
-  async ({ range }: { range: string }) => {
-    const apiResult = await fetchChangedTickets(range);
+  async ({ from, to }: { from: string, to: string }) => {
+    const apiResult = await fetchChangedTickets(from, to);
     if (!apiResult) {
       return {
         content: [
           {
             type: "text",
-            text: `Failed to retrieve ticket changes for range: ${range}`,
+            text: `Failed to retrieve ticket changes for range: ${from}.. ${to}`,
           },
         ],
       };
